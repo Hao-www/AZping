@@ -37,7 +37,7 @@ def getResults(failed, count, passed):
     # results list: [{ "seq" "time"}]
 
 def write_results(results):
-    client = boto3.client('dynamodb', region_name="us-east-2")      # DynamoDB Table is always in us-east-2
+    client = boto3.client('dynamodb', region_name="cn-north-1")      # DynamoDB Table is always in cn-north-1
     response = client.batch_write_item(
         RequestItems={
             'PingTest': results

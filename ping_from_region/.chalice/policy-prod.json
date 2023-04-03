@@ -3,7 +3,7 @@
     "Statement": [
         {
             "Action": "dynamodb:BatchWriteItem",
-            "Resource": "arn:aws:dynamodb:us-east-2:506666621600:table/PingTest",
+            "Resource": "arn:aws-cn:dynamodb:cn-north-1:912626692013:table/PingTest",
             "Effect": "Allow"
         },
         {
@@ -17,7 +17,7 @@
                 "logs:CreateLogStream",
                 "logs:PutLogEvents"
             ],
-            "Resource": "arn:aws:logs:*:*:*",
+            "Resource": "arn:aws-cn:logs:*:*:*",
             "Effect": "Allow"
         }
     ]
